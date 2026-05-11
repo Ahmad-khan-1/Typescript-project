@@ -5,3 +5,4 @@ let student = {
 };
 
 console.log(student.name);
+console.log("hello");
