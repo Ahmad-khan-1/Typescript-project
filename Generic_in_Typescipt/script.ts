@@ -20,8 +20,10 @@ const show = <T>(value : T) : T =>{
   return value
 }
 
+
 const fun = show<Person>(person1)
 console.log(fun);
+
 
 //Array of Generic 
 const array = <T>(value: T[]): T[] => {

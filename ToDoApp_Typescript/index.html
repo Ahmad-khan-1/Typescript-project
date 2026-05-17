@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Todo App</h1>
+
+      <div class="input-group">
+        <input type="text" id="todo-text" placeholder="Enter todo..." />
+        <button id="add-btn">Add</button>
+      </div>
+
+      <div class="controls">
+        <select id="filter">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="pending">Pending</option>
+        </select>
+        <button id="dark-btn">Dark Mode</button>
+      </div>
+
+      <ul id="todo-list"></ul>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
