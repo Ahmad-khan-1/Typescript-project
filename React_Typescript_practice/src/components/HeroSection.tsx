@@ -1,7 +1,7 @@
 type HeroSectionProps<T extends string | number> = {
   label: string;
   value: T;
-  onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChange: () => void;
 };
 
 const HeroSection = <T extends string | number>({
@@ -15,6 +15,7 @@ const HeroSection = <T extends string | number>({
         <label>{label}</label>
 
         <input type="text" value={value} onChange={onChange} />
+        <button type="submit">Click</button>
       </form>
     </div>
   );
