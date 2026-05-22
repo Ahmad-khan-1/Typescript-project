@@ -1,4 +1,5 @@
 import Counter from "./components/CounterApp";
+import EventTyping from "./components/EventTyping";
 import ClickaButton from "./components/General";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
@@ -21,6 +22,9 @@ const App = () => {
       <br />
       <br />
       <ClickaButton text="Click me" onClick={() => alert("this is me ")} />
+      <br />
+      <br />
+      <EventTyping />
     </div>
   );
 };
