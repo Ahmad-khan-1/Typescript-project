@@ -1,30 +1,33 @@
-export { }
+export {};
 interface Person {
-    //    [key : string] :string
-    name: string;
-    email: string;
+  //    [key : string] :string
+  name: string;
+  email: string;
 }
 
 const obj: Person = {
-    name: "Ahmad",
-    email: "nome26333@gmail.com"
-}
+  name: "Ahmad",
+  email: "nome26333@gmail.com",
+};
 
 const getName = (): string => {
-    return obj["name"]
-
-}
+  return obj["name"];
+};
 const getData = (): Person => {
-    return obj
-}
+  return obj;
+};
 
 const getMultipleData = (keys: (keyof Person)[]): string[] => {
-    return keys.map((key) => obj[key]);
+  return keys.map((key) => obj[key]);
 };
 console.log(getName());
 console.log(getMultipleData(["name", "email"]));
 console.log(getData());
 
+type MyRecord = Record<string, string>;
 
+const profileOne: MyRecord = {
+  name: "Ahmad",
+};
 
-
+console.log(profileOne);
