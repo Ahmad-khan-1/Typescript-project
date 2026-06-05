@@ -16,3 +16,4 @@ function add(a: number, b: number): number {
 }
 
 console.log(add(5, 4));
+
