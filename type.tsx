@@ -17,3 +17,32 @@ function add(a: number, b: number): number {
 
 console.log(add(5, 4));
 
+type User1 = {
+  name: string | number;
+  id: number;
+};
+const user: User1[] = [
+  {
+    name: "Ahmad ",
+    id: 23,
+  },
+  {
+    name: "Usman",
+    id: 2333,
+  },
+];
+
+type User = {
+  id: number | string;
+  name: string;
+};
+
+type Admin = User & {
+  role: string;
+};
+
+const adminUser: Admin = {
+  id: 101,
+  name: "Alice",
+  role: "superadmin",
+};

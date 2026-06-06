@@ -1,6 +1,6 @@
 export {};
 interface user {
-  name: string;
+  name: string | number;
   age: number;
 }
 
@@ -14,3 +14,18 @@ let profile: addInfo = {
 };
 
 console.log(profile.name);
+
+interface Profile {
+  name: string;
+  email: string;
+}
+
+interface Admin extends Profile {
+  isLoggedIn: boolean;
+}
+
+const user: Admin = {
+  name: "Ahmad-Mujtaba",
+  email: "ahmad@gamil.com",
+  isLoggedIn: false,
+};
